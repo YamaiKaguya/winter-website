@@ -1,0 +1,156 @@
+/*  HEADER  */
+
+header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+/* ?ICON */
+
+.website-icon-name {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+
+    &>.icon {
+        width: 50px;
+    }
+
+    &>.name {
+        display: inline-block;
+        font-size: 1.5rem;
+        font-weight: 550;
+        margin-left: 10px;
+        color: black;
+    }
+}
+
+/* ?NAVIGATION LINKS */
+
+nav {
+    margin-inline: auto;
+}
+
+.navigation-links {
+    list-style: none;
+}
+
+.link {
+    font-size: 1.3rem;
+    margin-inline: 20px;
+    cursor: pointer;
+
+    position: relative;
+
+    &::after {
+        width: 0%;
+        height: 4px;
+
+        content: '';
+        border-radius: 50px;
+        background-color: var(--primary_color);
+
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+
+        transition: .35s;
+    }
+
+    &:hover::after {
+        width: 100%;
+    }
+}
+
+.right-angle {
+    font-size: 10px;
+    position: absolute;
+    right: -15px;
+    top: 25%;
+}
+
+
+/* ?SEARCH BAR */
+
+.search-bar-container,
+.navigation-links {
+    display: flex;
+    justify-content: center;
+}
+
+.search-input {
+    font-size: 1rem;
+    border: 2px solid var(--primary_nonexistent_color);
+    border-right: none;
+    border-radius: 40px 0 0 40px;
+    padding: 0 0 0 30px;
+    cursor: text;
+
+    &:focus {
+        color: var(--txt-black);
+        outline: none;
+        border: 2px solid var(--primary_color);
+        border-right: none;
+    }
+}
+
+.submit-button {
+    width: 45px;
+    height: 45px;
+    border: 2px solid var(--primary_color);
+    background-color: var(--primary_color);
+    border-radius: 0 40px 40px 0;
+    cursor: pointer;
+    transition: background-color .15s;
+
+    &:hover {
+        background-color: #b2afffe6;
+    }
+}
+
+.search-icon {
+    padding: 10px;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+
+/* ?CART */
+
+.cart-container {
+    width: 45px;
+    height: 45px;
+    background-color: var(--primary_color);
+    border-radius: 50%;
+    margin-left: 10px;
+    cursor: pointer;
+
+    display: grid;
+    place-content: center;
+
+    position: relative;
+
+    &>.cart {
+        width: 30px;
+        height: 30px;
+    }
+
+    transition: background-color .15s;
+
+    &:hover {
+        background-color: #b2afffe6;
+    }
+}
+
+.cart-notif {
+    background-color: var(--notif-bg-color);
+    padding: 3px;
+    font-size: .7rem;
+    border-radius: 50%;
+    color: var(--txt-white);
+
+    position: absolute;
+    right: 0;
+    top: -5px;
+}

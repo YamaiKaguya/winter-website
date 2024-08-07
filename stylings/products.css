@@ -1,0 +1,165 @@
+/* ?PRODUCTS CONTAINER */
+
+.pruducts-container {
+   display: flex;
+   flex-direction: column;
+   gap: 30px;
+}
+
+.our-products {
+   text-align: center;
+   font-size: 3rem;
+}
+
+.products-navigation-bar {
+   margin-inline: auto;
+   font-size: 0;
+   list-style: none;
+}
+
+.products-navigation-bar li {
+   display: inline;
+   margin-inline: 30px;
+   color: var(--txt-blackish);
+   font-size: 1.2rem;
+   cursor: pointer;
+}
+
+/* !FOR ACTIVE LINK */
+
+.products-navigation-bar .active-link {
+   background-color: var(--primary_color);
+   border-radius: 30px;
+   padding: 13px 30px;
+   color: white;
+   box-shadow: var(--box-shadow_black);
+}
+
+
+/* ?GRID CONTAINER */
+
+.grid-products-container {
+   margin-top: 30px;
+
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+   gap: 20px;
+}
+
+/* ?CARD STYLINGS */
+
+.producs-card {
+   display: flex;
+   flex-direction: column;
+}
+
+.product-image {
+   width: 100%;
+   height: 300px;
+   /* when use % it takes 100% of its height??? */
+   object-fit: fill;
+   object-position: top;
+}
+
+.sub-card {
+   display: grid;
+   grid-template-columns: 1fr 50px;
+   margin-top: 20px;
+   flex: 1;
+}
+
+.sub-card-card {
+   flex: 1;
+
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+.product-name {
+   font-size: .9rem;
+   width: 30ch;
+   font-weight: 600;
+   margin-bottom: 5px;
+}
+
+.price-stars-container {
+   display: flex;
+}
+
+.price {
+   font-size: 1rem;
+   font-weight: 600;
+   color: var(--primary_color);
+
+   &>s {
+      color: var(--txt-blackish);
+   }
+}
+
+.stars-container-two {
+   margin-inline: auto;
+   font-size: 0;
+
+   &>.stars {
+      color: var(--stars);
+      font-size: .8rem;
+      margin-right: 2px;
+   }
+}
+
+.cart-icon {
+   width: 45px;
+   height: 45px;
+   background-color: var(--primary_color);
+
+   display: grid;
+   place-content: center;
+   border-radius: 50%;
+
+   &>.cart {
+      width: 30px;
+   }
+
+}
+
+
+
+/* ?DOTS CURRENT PAGE */
+
+.dots-page {
+   margin-inline: auto;
+   color: var(--bg-white);
+   font-size: .6rem;
+}
+
+.dots-page i {
+   box-shadow: var(--box-shadow_black);
+   border-radius: 50%;
+   color: rgb(228, 228, 228);
+   cursor: pointer;
+}
+
+.dots-page .active {
+   color: var(--primary_color);
+}
+
+
+/* ?SALE */
+
+.grid-products-container>* {
+   position: relative;
+}
+
+.grid-products-container>*.sale::after {
+   content: 'sale';
+   position: absolute;
+   left: 0;
+   top: 10px;
+
+   color: white;
+   font-size: .7rem;
+   background-color: var(--notif-bg-color);
+   padding: 2px 10px;
+
+}

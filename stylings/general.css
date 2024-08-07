@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+}
+
+body {
+    padding-bottom: 100px;
+    background-color: rgb(255, 255, 255);
+    font-family: "Poppins", sans-serif;
+
+    display: grid;
+    grid-template-columns: [page-start] 1fr [content-start] 85vw [content-end] 1fr [page-end];
+    grid-template-rows: [hero-start] 35vh [info-start] 1fr [info-end] 1fr [hero-end];
+
+    overflow-x: hidden;
+}
+
+/* ?GRID AREA */
+header {
+    grid-column: content-start / content-end;
+    grid-row: hero-start / info-start;
+}
+
+main {
+    grid-column: content;
+    grid-row: info-start / hero-end;
+
+    display: grid;
+    gap: 200px;
+}
+
+/* ?SELF HOSTING FONTS */
+
+@font-face {
+    font-family: 'seektruth';
+    src: url('fonts/seek_truth/SeekTruth.ttf') format('opentype');
+}
+
+:root {
+
+    /* ?TEXTCOLORSS */
+    --txt-pure-black: black;
+    --txt-white: white;
+    --txt-black: rgba(0, 0, 0, .800);
+    --txt-gray: #3e3e3e;
+    --txt-blackish: #747474;
+    --txt-moregray: #adadad;
+
+    /* ?PRIMARY COLORS */
+    --primary_color: #B1AFFF;
+    --primary_nonexistent_color: #b2afff9e;
+
+    /* ?BOX SHADOWS */
+    --box-shadow_black: 0 0 20px rgba(96, 30, 30, 0.166);
+
+    /* ?TEXT SHADOWS */
+    --text-shadow: rgba(0, 0, 0, 0.3);
+
+    /* ?BACKGROUND COLORS */
+    --bg-white: rgb(255, 255, 255);
+    --bg2-white: #C0D6E8;
+    --notif-bg-color: #FA7070;
+    --no-existen-gray: #f4f4f6;
+
+    /* ?FONT WEIGHTS */
+    --font-normal: 400;
+    --font-600: 600;
+    --font-bold: 700;
+    --font-lighter: lighter;
+    --font-bolder: bolder;
+
+    /* ?OTHERS */
+    --dt1: #FF4191;
+    --dt2: #3DC2EC;
+    --dt3: #7D8ABC;
+
+    --stars: rgb(255, 199, 108);
+}

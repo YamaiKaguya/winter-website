@@ -1,0 +1,122 @@
+/*  COLLECTIONS  */
+
+.grid-container-collections {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   grid-template-rows: repeat(2, 250px);
+   gap: 20px;
+}
+
+
+
+/* ?GRID */
+
+.grid-container-collections {
+
+   &>div {
+      background-color: var(--no-existen-gray);
+      cursor: pointer;
+   }
+
+   &>.winter-collection-container {
+      grid-area: 1 / 1 / 2 / 3;
+   }
+
+   &>.watch {
+      grid-area: 2 / 1 /3/ 2;
+   }
+
+   &>.bag {
+      grid-area: 2 / 2 / 2 / 3;
+   }
+
+   &>.womens-collection-container {
+      grid-area: 1 / 3 / 3 /-1;
+   }
+}
+
+
+
+/* ?WINTER COLLECTION */
+
+:is(.winter-collection-container,
+   .womens-collection-container) {
+   display: flex;
+   justify-content: flex-start;
+
+   padding-inline: 30px;
+
+   position: relative;
+}
+
+:is(.winter-collection,
+   .women-collection) {
+   display: flex;
+   flex-direction: column;
+}
+
+.winter-collection-title,
+.women-collection-title {
+   color: var(--txt-blackish);
+   font-size: 1.3rem;
+   margin-top: auto;
+   font-weight: 500;
+}
+
+:is(.winter-collection-description,
+   .women-collection-description) {
+   font-size: 2rem;
+   font-weight: 600;
+   margin-block: 10px 20px;
+   text-wrap: nowrap;
+}
+
+:is(.winter-collection-button,
+   .women-collection-button) {
+   width: max-content;
+   color: var(--txt-white);
+   font-weight: 500;
+   letter-spacing: .50px;
+   background-color: var(--primary_color);
+   box-shadow: var(--box-shadow_black);
+   border: none;
+   border-radius: 35px;
+   padding: 12px 30px;
+   margin-bottom: auto;
+   cursor: pointer;
+
+   &:hover {
+      background-color: #b2afffe6;
+   }
+}
+
+.winter-collection-img,
+.women-collection-img {
+   width: 270px;
+   height: 100%;
+   object-fit: cover;
+
+   position: absolute;
+   right: 0;
+}
+
+
+/* ?COLLECTION */
+
+.collection {
+   height: 100%;
+   object-fit: contain;
+   margin-inline: auto;
+}
+
+/* ?WATCH */
+
+.collection-watch {
+   padding-block: 20px;
+}
+
+/* ?BAG */
+
+.collection-bag {
+   padding: 30px;
+}
