@@ -57,6 +57,7 @@ main {
 
     /* ?BOX SHADOWS */
     --box-shadow_black: 0 0 20px rgba(96, 30, 30, 0.166);
+    --box-shadow_custom: 0 0 20px rgba(96, 30, 30, 0.10);
 
     /* ?TEXT SHADOWS */
     --text-shadow: rgba(0, 0, 0, 0.3);
