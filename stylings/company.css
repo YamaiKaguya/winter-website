@@ -1,0 +1,10 @@
+.companies {
+   width: 100%;
+   display: flex;
+   margin-top: 100px;
+
+   &>img {
+      margin-inline: auto;
+      width: 110px;
+   }
+}
