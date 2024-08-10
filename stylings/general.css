@@ -9,30 +9,31 @@ img {
 }
 
 body {
-    padding-top: 25px;
-    padding-bottom: 1000px;
+    padding-top: 40px;
     background-color: rgb(255, 255, 255);
     font-family: "Poppins", sans-serif;
 
     display: grid;
     grid-template-columns: [page-start] 1fr [content-start] 85vw [content-end] 1fr [page-end];
-    grid-template-rows: [hero-start] 25vh [info-start] 1fr [info-end] 1fr [hero-end];
-
-    overflow-x: hidden;
+    gap: 100px;
+    /* overflow-x: hidden; */
 }
 
 /* ?GRID AREA */
 header {
-    grid-column: content-start / content-end;
-    grid-row: hero-start / info-start;
+    grid-column: content;
 }
 
 main {
     grid-column: content;
-    grid-row: info-start / hero-end;
-
     display: grid;
     gap: 200px;
+}
+
+footer {
+    grid-column: content;
+    display: grid;
+    gap: 70px;
 }
 
 /* ?SELF HOSTING FONTS */
@@ -51,6 +52,8 @@ main {
     --txt-gray: #3e3e3e;
     --txt-blackish: #747474;
     --txt-moregray: #adadad;
+
+    --txt-light-black: #3d3d3d;
 
     /* ?PRIMARY COLORS */
     --primary_color: #B1AFFF;
@@ -82,4 +85,6 @@ main {
     --dt3: #7D8ABC;
 
     --stars: rgb(255, 199, 108);
+
+    --primary-transition: .15s;
 }
