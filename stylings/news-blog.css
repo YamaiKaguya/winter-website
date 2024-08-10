@@ -19,7 +19,7 @@
 
    &::before {
       content: attr(data-date);
-      color: white;
+      color: var(--txt-white);
       background-color: #222222;
       padding: 3px 8px;
       font-size: .6rem;

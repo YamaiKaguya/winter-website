@@ -21,7 +21,7 @@ header {
         font-size: 1.5rem;
         font-weight: 550;
         margin-left: 10px;
-        color: black;
+        color: var(--txt-black);
     }
 }
 

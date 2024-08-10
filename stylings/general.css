@@ -33,7 +33,7 @@ main {
 footer {
     grid-column: content;
     display: grid;
-    gap: 70px;
+    gap: 80px;
 }
 
 /* ?SELF HOSTING FONTS */
@@ -46,9 +46,9 @@ footer {
 :root {
 
     /* ?TEXTCOLORSS */
-    --txt-pure-black: black;
+    --txt-black: black;
     --txt-white: white;
-    --txt-black: rgba(0, 0, 0, .800);
+
     --txt-gray: #3e3e3e;
     --txt-blackish: #747474;
     --txt-moregray: #adadad;
@@ -71,13 +71,6 @@ footer {
     --bg2-white: #C0D6E8;
     --notif-bg-color: #FA7070;
     --no-existen-gray: #f4f4f6;
-
-    /* ?FONT WEIGHTS */
-    --font-normal: 400;
-    --font-600: 600;
-    --font-bold: 700;
-    --font-lighter: lighter;
-    --font-bolder: bolder;
 
     /* ?OTHERS */
     --dt1: #FF4191;

@@ -55,12 +55,12 @@
 .card__sub-title {
    color: var(--txt-blackish);
    font-size: .7rem;
-   font-weight: var(--font-bold);
+   font-weight: 700;
 }
 
 .card__title {
-   color: var(--txt-pure-black);
-   font-weight: var(--font-bold);
+   color: var(--txt-black);
+   font-weight: 700;
    font-size: 1.2rem;
    margin-block: 2px 9px;
 }
@@ -72,7 +72,7 @@
 
 .card__price {
    color: var(--primary_color);
-   font-weight: var(--font-600);
+   font-weight: 600;
 }
 
 .prev-price {
