@@ -14,7 +14,7 @@ body {
     font-family: "Poppins", sans-serif;
 
     display: grid;
-    grid-template-columns: [page-start] 1fr [content-start] 85vw [content-end] 1fr [page-end];
+    grid-template-columns: [page-start] 1fr [content-start] minmax(1300px, 1fr) [content-end] 1fr [page-end];
     gap: 100px;
 }
 
@@ -43,6 +43,9 @@ footer {
 }
 
 :root {
+
+    display: flex;
+    justify-content: center;
 
     /* ?TEXTCOLORSS */
     --txt-black: black;
@@ -84,9 +87,10 @@ footer {
 
 /* ?QUERIES */
 
-@media only screen and (max-width: 650px) {
-    .right-homepage>* {
-        display: none;
-        opacity: 0;
+ia only screen and (max-width: 751px) {
+    .navigation-links {}
+
+    body {
+        background-color: #3e3e3e;
     }
 }

@@ -36,7 +36,7 @@ nav {
 }
 
 .link {
-    font-size: 1.3rem;
+    font-size: clamp(1rem, 2vw, 1.3rem);
     margin-inline: 20px;
     cursor: pointer;
 
