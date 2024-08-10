@@ -16,7 +16,6 @@ body {
     display: grid;
     grid-template-columns: [page-start] 1fr [content-start] 85vw [content-end] 1fr [page-end];
     gap: 100px;
-    /* overflow-x: hidden; */
 }
 
 /* ?GRID AREA */
@@ -80,4 +79,14 @@ footer {
     --stars: rgb(255, 199, 108);
 
     --primary-transition: .15s;
+}
+
+
+/* ?QUERIES */
+
+@media only screen and (max-width: 650px) {
+    .right-homepage>* {
+        display: none;
+        opacity: 0;
+    }
 }
