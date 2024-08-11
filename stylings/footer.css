@@ -8,19 +8,6 @@
    display: grid;
    place-items: center;
    gap: 30px;
-   position: relative;
-
-   &::after {
-      background-color: #f8f8f8;
-      content: '';
-      width: 100vw;
-      height: 100%;
-
-      position: absolute;
-      top: 0;
-      left: -130px;
-      z-index: -1;
-   }
 
    &>h1 {
       font-size: 2.5rem;
@@ -118,20 +105,6 @@
    padding-block: 30px;
    border-bottom: 1px solid rgba(0, 0, 0, 0.060);
    background-color: #f8f8f8;
-   position: relative;
-
-   &::after {
-      background-color: #f8f8f8;
-      content: '';
-      width: 100vw;
-      height: 100%;
-      border-bottom: 1px solid rgba(0, 0, 0, 0.060);
-
-      position: absolute;
-      top: 0;
-      left: -130px;
-      z-index: -1;
-   }
 }
 
 /* ?FIRST LINK */

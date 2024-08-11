@@ -87,7 +87,7 @@ footer {
 
 /* ?QUERIES */
 
-@media only screen and (max-width: 1230px) {
+@media only screen and (max-width: 650px) {
 
     header .website-icon-name,
     nav .navigation-links {
@@ -97,5 +97,13 @@ footer {
 
     .burger-container .burger-nav {
         display: block;
+    }
+
+    .search-input {
+        display: none;
+    }
+
+    .search-bar-container .submit-button {
+        border-radius: 50%;
     }
 }
