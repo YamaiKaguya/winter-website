@@ -26,6 +26,12 @@ header {
     }
 }
 
+header .burger-nav {
+    font-size: 35px;
+    color: var(--primary_color);
+    display: none;
+}
+
 /* ?NAVIGATION LINKS */
 
 nav {
