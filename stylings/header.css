@@ -20,14 +20,13 @@ header {
     &>.name {
         display: inline-block;
         font-size: 1.5rem;
-        font-weight: 550;
         margin-left: 10px;
         color: var(--txt-black);
     }
 }
 
 header .burger-nav {
-    font-size: 35px;
+    font-size: 2rem;
     color: var(--primary_color);
     display: none;
 }
@@ -43,7 +42,7 @@ nav {
 }
 
 .link {
-    font-size: clamp(1rem, 2vw, 1.3rem);
+    font-size: 1.3rem;
     margin-inline: 20px;
     cursor: pointer;
 
@@ -70,7 +69,8 @@ nav {
 }
 
 .right-angle {
-    font-size: 10px;
+    font-size: .8rem;
+
     position: absolute;
     right: -15px;
     top: 25%;

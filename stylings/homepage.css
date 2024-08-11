@@ -12,6 +12,8 @@
     gap: 50px;
 }
 
+.left-homepage>* {}
+
 .left-title-container {
     display: flex;
     align-items: center;

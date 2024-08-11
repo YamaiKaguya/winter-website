@@ -12,6 +12,7 @@ body {
     padding-top: 40px;
     background-color: rgb(255, 255, 255);
     font-family: "Poppins", sans-serif;
+    font-size: 16px;
 
     display: grid;
     grid-template-columns: [page-start] 1fr [content-start] 85vw [content-end] 1fr [page-end];
@@ -64,6 +65,8 @@ footer {
     /* ?BOX SHADOWS */
     --box-shadow_black: 0 0 20px rgba(96, 30, 30, 0.166);
     --box-shadow_custom: 0 0 20px rgba(96, 30, 30, 0.10);
+
+    --drop-shadow-black: #b2afff9e;
 
     /* ?TEXT SHADOWS */
     --text-shadow: rgba(0, 0, 0, 0.3);
