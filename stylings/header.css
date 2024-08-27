@@ -28,6 +28,7 @@ header {
 
 header .burger-nav {
     font-size: 2rem;
+    padding-block: 9px;
     color: var(--primary_color);
     display: none;
 }

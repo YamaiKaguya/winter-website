@@ -10,6 +10,7 @@
 .left-homepage {
     display: grid;
     gap: 50px;
+    height: max-content;
 }
 
 
