@@ -9,39 +9,55 @@ img {
 }
 
 body {
-    padding-top: 40px;
+    padding-block: 40px 100px;
     background-color: rgb(255, 255, 255);
-    font-family: "Poppins", sans-serif;
-    font-size: 16px;
+    font-family: Poppins;
 
     display: grid;
-    grid-template-columns: [page-start] 1fr [content-start] 85vw [content-end] 1fr [page-end];
-    gap: 100px;
+    grid-template-columns:
+        [page-start] 1fr [content-start] 90vw [content-end] 1fr [page-end];
+
+    /* ?GRID AREA */
+
+    &>header {
+        grid-column: content;
+    }
+
+    &>main {
+        grid-column: page;
+        margin-top: 80px;
+
+        display: grid;
+        grid-template-columns:
+            [mainpage-start] 1fr [maincontent-start] 5vw [main]87vw [main] 1fr [maincontent-end] 5vw [mainpage-end];
+        row-gap: 200px;
+
+        &>.homepage {
+            grid-column: main;
+        }
+
+        &>.card-grid {
+            grid-column: main;
+        }
+
+        &>.collections {
+            grid-column: main;
+        }
+    }
+
+
+
+
+    &>footer {
+        grid-column: content;
+        display: grid;
+        gap: 80px;
+    }
 }
 
-/* ?GRID AREA */
-header {
-    grid-column: content;
-}
 
-main {
-    grid-column: content;
-    display: grid;
-    gap: 200px;
-}
 
-footer {
-    grid-column: content;
-    display: grid;
-    gap: 80px;
-}
 
-/* ?SELF HOSTING FONTS */
-
-@font-face {
-    font-family: 'seektruth';
-    src: url('fonts/seek_truth/SeekTruth.ttf') format('opentype');
-}
 
 :root {
 
@@ -60,6 +76,7 @@ footer {
 
     /* ?PRIMARY COLORS */
     --primary_color: #B1AFFF;
+    --primary_color_hover: #b2afffe6;
     --primary_nonexistent_color: #b2afff9e;
 
     /* ?BOX SHADOWS */
@@ -88,9 +105,28 @@ footer {
 }
 
 
-/* ?QUERIES */
+/* ?SELF HOSTING FONTS */
 
-@media only screen and (max-width: 650px) {
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/Poppins/Poppins-Regular.ttf') format('opentype')
+}
+
+
+
+@font-face {
+    font-family: 'Duran';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/duran/Duran-Medium.ttf') format('opentype')
+}
+
+
+
+/* ?QUERIES */
+@media only screen and (max-width: 1200px) {
 
     header .website-icon-name,
     nav .navigation-links {
@@ -98,15 +134,29 @@ footer {
         opacity: 0;
     }
 
-    .burger-container .burger-nav {
-        display: block;
+    .burger-container {
+
+        &>.burger-nav {
+            display: block;
+        }
     }
 
-    .search-input {
+    .homepage .right-homepage {
         display: none;
+        opacity: 0;
     }
 
-    .search-bar-container .submit-button {
-        border-radius: 50%;
+
+    .search-bar-container {
+        margin-left: 20px;
+
+        &>.search-input {
+            width: 40vw;
+        }
+    }
+
+
+    main .homepage {
+        grid-template-columns: 1fr;
     }
 }

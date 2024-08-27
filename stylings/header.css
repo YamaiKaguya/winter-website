@@ -2,6 +2,7 @@
 
 header {
     display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -38,11 +39,12 @@ nav {
 }
 
 .navigation-links {
+    display: flex;
     list-style: none;
 }
 
 .link {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     margin-inline: 20px;
     cursor: pointer;
 
@@ -79,13 +81,16 @@ nav {
 
 /* ?SEARCH BAR */
 
-.search-bar-container,
-.navigation-links {
+
+.search-bar-container {
     display: flex;
-    justify-content: center;
 }
 
 .search-input {
+    width: 0;
+    width: 20vw;
+
+    font-family: Poppins;
     font-size: 1rem;
     border: 2px solid var(--primary_nonexistent_color);
     border-right: none;
@@ -102,8 +107,6 @@ nav {
 }
 
 .submit-button {
-    width: 45px;
-    height: 45px;
     border: 2px solid var(--primary_color);
     background-color: var(--primary_color);
     border-radius: 0 40px 40px 0;
@@ -124,12 +127,14 @@ nav {
 
 /* ?CART */
 
+.profile-container,
 .cart-container {
-    width: 45px;
-    height: 45px;
+    min-width: 45px;
+    min-height: 45px;
+
     background-color: var(--primary_color);
     border-radius: 50%;
-    margin-left: 10px;
+    margin-left: 5px;
     cursor: pointer;
 
     display: grid;

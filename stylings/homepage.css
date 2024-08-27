@@ -12,7 +12,6 @@
     gap: 50px;
 }
 
-.left-homepage>* {}
 
 .left-title-container {
     display: flex;
@@ -49,6 +48,7 @@
 
 .left-sub-title-container {
     display: flex;
+    align-items: flex-end;
 
     &>.confetti {
         width: 100px;
@@ -56,27 +56,30 @@
 }
 
 .sub-title {
-    font-size: clamp(2rem, 4vw, 5rem);
+    font-size: 3.5rem;
     color: var(--txt-black);
     text-wrap: nowrap;
+    line-height: 65px;
+
 }
 
 .left-main-title-description {
     width: 50ch;
     color: var(--txt-gray);
     font-size: 1rem;
-    line-height: 22px;
+    line-height: 20px;
 }
 
 .shop-now {
     width: 200px;
-    height: 55px;
-    font-size: 1rem;
-    color: var(--txt-white);
-    background-color: var(--primary_color);
-    border-radius: 40px;
     padding-block: 10px;
+
+    color: var(--txt-white);
+    font-size: 1rem;
+    font-family: Poppins;
+    background-color: var(--primary_color);
     border: none;
+    border-radius: 40px;
     box-shadow: var(--box-shadow_black);
 
     display: flex;
@@ -87,18 +90,13 @@
     cursor: pointer;
 
     &:hover {
-        background-color: #b2afffe6;
+        background-color: var(--primary_color_hover);
+    }
+
+    &>i {
+        width: 30px;
     }
 }
-
-.shop-now p {
-    font-size: 1rem;
-}
-
-.shop-now i {
-    width: 30px;
-}
-
 
 
 /* ?RIGHT SIDE */
@@ -123,7 +121,7 @@
 /* ?RATOR */
 
 .rator-container {
-    padding: 8px;
+    padding: 5px;
     border-radius: 10px;
     background-color: var(--bg-white);
     box-shadow: var(--box-shadow_black);
@@ -146,9 +144,10 @@
 .rator-sub-container {
     display: flex;
     flex-direction: column;
+    justify-content: center;
 
     &>h2 {
-        font-size: 1rem;
+        font-size: .9rem;
         color: var(--txt-black);
     }
 
@@ -161,7 +160,7 @@
 
         &>.stars {
             color: var(--stars);
-            font-size: .8rem;
+            font-size: .7rem;
             margin-right: 2px;
         }
     }
@@ -172,8 +171,9 @@
 .discount {
     background-color: var(--bg-white);
     padding: 10px 20px;
-    border-radius: 15px;
+    border-radius: 10px;
     box-shadow: var(--box-shadow_black);
+    line-height: 1;
 
     position: absolute;
     top: 80px;
