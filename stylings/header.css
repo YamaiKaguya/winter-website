@@ -166,3 +166,15 @@ nav {
     right: 0;
     top: -5px;
 }
+
+
+/* ?IPHONE12 */
+@media only screen and (max-width:450px) {
+
+    header .search-bar-container .search-input,
+    header .search-bar-container button {
+        display: none;
+    }
+}
+
+/* ?768 */

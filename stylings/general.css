@@ -8,26 +8,34 @@ img {
     display: block;
 }
 
+/* ?SELF HOSTING FONTS */
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/Poppins/Poppins-Regular.ttf') format('opentype')
+}
+
 body {
-    padding-block: 5vh 100px;
+    padding-block: 5vh 0;
     background-color: rgb(255, 255, 255);
     font-family: Poppins;
+    row-gap: 100px;
 
     display: grid;
-    grid-template-columns:
-        [page-start] 1fr [content-start] 90vw [content-end] 1fr [page-end];
+    grid-template-columns: [page-start] 1fr [content-start] 90vw [content-end] 1fr [page-end];
 
+    /* ?HEADER */
     &>header {
         grid-column: content;
     }
 
+    /* ?MAIN */
     &>main {
         grid-column: page;
-        margin-top: 80px;
 
         display: grid;
-        grid-template-columns:
-            [mainpage-start] 1fr [maincontent-start] 5vw [main]87vw [main] 1fr [maincontent-end] 5vw [mainpage-end];
+        grid-template-columns: [mainpage-start] 1fr [maincontent-start] 5vw [main]85vw [main] 5vw [maincontent-end] 1fr [mainpage-end];
         row-gap: 200px;
 
         &>.homepage {
@@ -41,12 +49,49 @@ body {
         &>.collections {
             grid-column: main;
         }
+
+        &>.pruducts-container {
+            grid-column: main;
+        }
+
+        &>.testimonials-container {
+            grid-column: main;
+        }
+
+        &>.news-blog {
+            grid-column: main;
+        }
     }
 
+    /* ?FOOTER */
     &>footer {
-        grid-column: content;
+        grid-column: page;
+
         display: grid;
-        gap: 80px;
+        grid-template-columns: [mainpage-start] 1fr [maincontent-start] 5vw [main]85vw [main] 5vw [maincontent-end] 1fr [mainpage-end];
+        row-gap: 40px;
+        margin-top: 100px;
+
+        &>.email-us {
+            grid-column: mainpage;
+        }
+
+        &>.footer-services {
+            grid-column: main;
+        }
+
+        &>.footer-links {
+            grid-column: mainpage;
+            padding-inline: 7vw;
+        }
+
+        &>.copyright-container {
+            grid-column: main;
+        }
+
+        .multiple-link {
+            grid-column: mainpage;
+        }
     }
 }
 
@@ -55,9 +100,8 @@ body {
 
 
 :root {
-
-    display: flex;
-    justify-content: center;
+    /* display: flex; */
+    /* justify-content: center; */
 
     /* ?TEXTCOLORSS */
     --txt-black: black;
@@ -100,17 +144,10 @@ body {
 }
 
 
-/* ?SELF HOSTING FONTS */
 
-@font-face {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 500;
-    src: url('../fonts/Poppins/Poppins-Regular.ttf') format('opentype')
-}
 
 /* ?QUERIES */
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1300px) {
 
     header .website-icon-name,
     nav .navigation-links {

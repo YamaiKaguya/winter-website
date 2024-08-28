@@ -3,7 +3,7 @@
 .grid-container-collections {
    display: grid;
    grid-template-columns: repeat(4, 1fr);
-   grid-template-rows: repeat(3, 250px);
+   grid-template-rows: repeat(2, 250px);
    gap: 20px;
 }
 
