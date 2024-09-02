@@ -232,6 +232,16 @@
 }
 
 
+@media only screen and (max-width: 470px) {
+
+
+
+   .terms-security-services {
+      &>li {
+         margin-left: 8px;
+      }
+   }
+}
 
 @media only screen and (max-width: 850px) {
 
@@ -242,7 +252,7 @@
    }
 
    .multiple-link ul li:nth-child(1) {
-      border-bottom: 1px solid rgba(0, 0, 0, 0.100);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.070);
    }
 
    .footer-links-wrapper {
