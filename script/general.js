@@ -14,9 +14,10 @@ document.addEventListener("DOMContentLoaded", () => {
       const rowsSpanned = Math.ceil(containerHeight / cardHeight);
    
       if (rowsSpanned > 2) {
-         card.remove();
+         card.style.display = 'none';
          console.log("ROW: " + rowsSpanned + " itemRemoved")
       }
+      // location.reload();
    });
    
 })

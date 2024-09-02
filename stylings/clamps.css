@@ -7,6 +7,6 @@
    --step-1: clamp(1.2rem, 0.9652rem + 1.1739vw, 1.875rem);
    --step-2: clamp(1.44rem, 1.1257rem + 1.5717vw, 2.3438rem);
    --step-3: clamp(1.728rem, 1.31rem + 2.0899vw, 2.9297rem);
-   --step-4: clamp(2.0736rem, 1.5211rem + 2.7626vw, 3.6621rem);
+   --step-4: clamp(2.8736rem, 1.5211rem + 2.7626vw, 3.6621rem);
    --step-5: clamp(2.4883rem, 1.7616rem + 3.6336vw, 4.5776rem);
 }

@@ -11,7 +11,7 @@
    grid-column: 1/ -1;
 
    font-family: Poppins;
-   font-size: clamp(2rem, 2.3rem, 2.5rem);
+   font-size: var(--step-2);
 
    text-align: center;
    color: var(--txt-black);

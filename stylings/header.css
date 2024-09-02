@@ -177,4 +177,57 @@ nav {
     }
 }
 
-/* ?768 */
+/* ?QUERIES */
+@media only screen and (max-width: 1300px) {
+    header .search-bar-container {
+        &>input {
+            display: none;
+        }
+
+        &>.submit-button {
+            border-radius: 50%;
+        }
+    }
+
+    .homepage .right-homepage {
+        display: none;
+        opacity: 0;
+    }
+
+    .search-bar-container {
+        margin-left: 20px;
+
+        &>.search-input {
+            width: 40vw;
+        }
+    }
+
+    main .homepage {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+
+    header .search-bar-container {
+        &>input {
+            display: block;
+        }
+
+        &>.submit-button {
+            border-radius: 0px 40px 40px 0px;
+        }
+    }
+
+    header .website-icon-name,
+    nav .navigation-links {
+        display: none;
+        opacity: 0;
+    }
+
+    .burger-container {
+        &>.burger-nav {
+            display: block;
+        }
+    }
+}
