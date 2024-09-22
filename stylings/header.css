@@ -14,13 +14,13 @@ header {
     text-decoration: none;
 
     &>.icon {
-        width: 50px;
-        height: 50px;
+        width: 45px;
+        height: 45px;
     }
 
     &>.name {
         display: inline-block;
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         margin-left: 10px;
         color: var(--txt-black);
     }
@@ -45,7 +45,7 @@ nav {
 }
 
 .link {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     margin-inline: 20px;
     cursor: pointer;
 
@@ -53,7 +53,7 @@ nav {
 
     &::after {
         width: 0%;
-        height: 4px;
+        height: 2px;
 
         content: '';
         border-radius: 50px;
@@ -72,11 +72,11 @@ nav {
 }
 
 .right-angle {
-    font-size: .8rem;
+    font-size: .6rem;
 
     position: absolute;
     right: -15px;
-    top: 25%;
+    top: 35%;
 }
 
 
@@ -88,31 +88,35 @@ nav {
 }
 
 .search-input {
-    width: 0;
     width: 20vw;
+    height: 43px;
 
     font-family: Poppins;
-    font-size: 1rem;
-    border: 2px solid var(--primary_nonexistent_color);
-    border-right: none;
-    border-radius: 40px 0 0 40px;
+    font-size: .9rem;
     padding: 0 0 0 30px;
+
+    border: 1px solid var(--primary_nonexistent_color);
+    border-radius: 40px 0 0 40px;
+    border-right: none;
     cursor: text;
 
     &:focus {
         color: var(--txt-black);
         outline: none;
-        border: 2px solid var(--primary_color);
+        border: 1px solid var(--primary_color);
         border-right: none;
     }
 }
 
 .submit-button {
+    width: 43px;
+    height: 43px;
+
     border: 2px solid var(--primary_color);
     background-color: var(--primary_color);
     border-radius: 0 40px 40px 0;
-    cursor: pointer;
     transition: background-color .15s;
+    cursor: pointer;
 
     &:hover {
         background-color: #b2afffe6;
@@ -128,10 +132,20 @@ nav {
 
 /* ?CART */
 
+.cart-main-container {
+    position: relative;
+}
+
+.cart-main-container:hover .list-options {
+    opacity: 1;
+    display: block;
+}
+
+
 .profile-container,
 .cart-container {
-    min-width: 45px;
-    min-height: 45px;
+    width: 43px;
+    height: 43px;
 
     background-color: var(--primary_color);
     border-radius: 50%;
@@ -144,8 +158,8 @@ nav {
     position: relative;
 
     &>.cart {
-        width: 30px;
-        height: 30px;
+        width: 28px;
+        height: 28px;
     }
 
     transition: background-color .15s;
@@ -154,6 +168,99 @@ nav {
         background-color: #b2afffe6;
     }
 }
+
+.list-options {
+    z-index: 1;
+    position: absolute;
+    top: 60px;
+    right: -15px;
+
+    width: 400px;
+    height: max-content;
+
+    list-style: none;
+    background-color: rgb(255, 255, 255);
+    box-shadow: var(--box-shadow_custom);
+
+    &>h4 {
+        font-weight: 100;
+        font-size: 13px;
+        color: var(--txt-moregray);
+        margin-top: 5px;
+        padding: 10px;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 100%;
+        right: 25px;
+        border-width: 10px;
+        border-style: solid;
+        border-color: transparent transparent rgb(255, 255, 255) transparent;
+    }
+
+    opacity: 0;
+    display: none;
+    transition: transform .15s ease;
+}
+
+.cart-items {
+    padding: 10px 10px;
+    height: max-content;
+
+    color: var(--txt-gray);
+    padding-right: 5px;
+    display: flex;
+    align-items: start;
+
+    &>h1 {
+        font-size: .8rem;
+        margin-inline: 10px auto;
+    }
+
+    &>h5 {
+        font-size: .8rem;
+    }
+
+    cursor: pointer;
+
+    &:hover {
+        background-color: var(--no-existen-gray);
+    }
+}
+
+.cart-items img {
+    width: 45px;
+    height: 45px;
+
+    object-fit: fill;
+}
+
+
+.cart-footer {
+    font-size: 12px;
+    padding: 10px;
+
+    display: flex;
+    align-items: center;
+
+    &>span {
+        color: white;
+        padding: 7px 15px;
+        font-size: 13px;
+        margin-left: auto;
+        box-shadow: var(--box-shadow_custom);
+
+        background-color: var(--primary_color);
+        cursor: pointer;
+
+        &:hover {
+            background-color: #b2afffe6;
+        }
+    }
+}
+
 
 .cart-notif {
     background-color: var(--notif-bg-color);
@@ -167,7 +274,6 @@ nav {
     top: -5px;
 }
 
-
 /* ?IPHONE12 */
 @media only screen and (max-width:450px) {
 
@@ -177,7 +283,19 @@ nav {
     }
 }
 
+
+
+
+
+
 /* ?QUERIES */
+
+@media only screen and (max-width: 450px) {
+    body {
+        padding-block: 2vh 0;
+    }
+}
+
 @media only screen and (max-width: 1300px) {
     header .search-bar-container {
         &>input {

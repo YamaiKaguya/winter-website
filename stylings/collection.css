@@ -74,13 +74,13 @@
    .women-collection-button) {
    width: max-content;
    color: var(--txt-white);
-   font-weight: 500;
    letter-spacing: .50px;
    background-color: var(--primary_color);
    box-shadow: var(--box-shadow_black);
    border: none;
    border-radius: 35px;
-   padding: 12px 30px;
+   padding: 12px 28px;
+
    margin-bottom: auto;
    cursor: pointer;
 
@@ -116,6 +116,14 @@
 .collection-bag {
    padding: 30px;
 }
+
+
+
+
+
+
+
+
 
 
 

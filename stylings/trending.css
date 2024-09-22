@@ -10,11 +10,11 @@
 .cards-title {
    grid-column: 1/ -1;
 
-   font-family: Poppins;
    font-size: var(--step-2);
-
-   text-align: center;
    color: var(--txt-black);
+   text-align: center;
+   font-family: Poppins;
+   font-weight: 500;
 }
 
 .card {
@@ -29,7 +29,7 @@
 
 .card_img {
    width: 100%;
-   height: 270px;
+   height: 100%;
    object-fit: fill;
    object-position: top;
 
@@ -55,8 +55,8 @@
 
 .card__title {
    color: var(--txt-black);
-   font-weight: 700;
-   font-size: 1rem;
+   font-size: .9rem;
+   font-weight: 600;
 }
 
 .price-stars-container {
@@ -68,7 +68,7 @@
 .card__price {
    color: var(--primary_color);
    font-size: .9rem;
-   font-weight: 600;
+   font-weight: 500;
 }
 
 .prev-price {
@@ -80,6 +80,25 @@
 
    &>i {
       font-size: .7rem;
+      margin-left: 2px;
       color: var(--stars);
+   }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ?MEDIA QUERY */
+
+@media (max-width: 850px) {
+   .card-grid {
+      grid-template-columns: repeat(2, 1fr);
    }
 }

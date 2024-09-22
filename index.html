@@ -25,7 +25,7 @@
 <body>
 
 <!-- ?HEADER -->
-    <header>
+    <header class="header-container">
         <a href="#" class="website-icon-name">
             <img src="svgs/store.svg" alt="" class="icon">
             <h1 class="name">Winter</h1>
@@ -55,10 +55,51 @@
             <button type="button" title="button" class="submit-button">
                 <i class="fa-solid fa-magnifying-glass search-icon"></i>
             </button>
-            <div class="cart-container">
-                <img src="svgs/bag.svg" alt="" class="cart">
-                <div class="cart-notif">9+</div>
-            </div>
+
+            <details class="cart-main-container" open>
+                <summary class="cart-container" >
+                    <img src="svgs/bag.svg" alt="" class="cart">
+                    <div class="cart-notif">9+</div>
+                </summary>
+                <ul class="list-options">
+                    <h4>Recently Added Products</h4>
+                    <li class="cart-items">
+                        <img src="item1.jpg" alt="">
+                        <h1>MANDI BOTTOM - HONEY</h1>
+                        <h5>&#8369; 2,400</h5>
+                    </li>
+
+                    <li class="cart-items">
+                        <img src="item2.jpg" alt="">
+                        <h1>SONNY TOP - HONEY</h1>
+                        <h5>&#8369; 4,599</h5>
+                    </li>
+
+                    <li class="cart-items">
+                        <img src="item3.jpg" alt="">
+                        <h1>MANDI BOTTOM - BONITA</h1>
+                        <h5>&#8369; 1,999</h5>
+                    </li>
+
+                    <li class="cart-items">
+                        <img src="item4.jpg" alt="">
+                        <h1>JEAN TOP - CRUSH</h1>
+                        <h5>&#8369; 3,499</h5>
+                    </li>
+
+                    <li class="cart-items">
+                        <img src="item5.jpg" alt="">
+                        <h1>JEAN TOP - SOL</h1>
+                        <h5>&#8369; 4,000</h5>
+                    </li>
+
+                    <div class="cart-footer">
+                        288 more products in cart 
+                        <span>View my shopping cart</span>
+                    </div>
+                </ul>
+            </details>
+
             <div class="profile-container">
                 <img src="svgs/profile.svg" alt="" class="cart">
             </div>
@@ -66,7 +107,7 @@
         </div>
     </header> 
 
-    <main>  
+    <main class="main-container">  
         <section class="homepage">
             <div class="left-homepage">
                 <div class="left-title-container">
@@ -121,8 +162,8 @@
             <h1 class="cards-title"> Trending Fashion 🔥</h1>
             
             <div class="card">
-                <img src="" alt="woman in bikini" class="card_img" alt="Woman in bikini">
-                <!-- <img src="img/trending/model1.webp" alt="" class="card_img"> -->
+                <!-- <img src="" alt="woman in bikini" class="card_img" alt="Woman in bikini"> -->
+                <img src="img/products model/model1.jpg" alt="" class="card_img">
                 <div class="sub__card">
                     <div class="card__sub-title">WOMEN FASHION</div>
                     <div class="card__title">MYA TOP - MOCHA</div>
@@ -140,8 +181,8 @@
             </div>
 
             <div class="card">
-                <img src="" alt="woman in bikini" class="card_img">
-                <!-- <img src="img/trending/model2.webp" alt="" class="card_img"> -->
+                <!-- <img src="" alt="woman in bikini" class="card_img"> -->
+                <img src="img/products model/model8.jpg" alt="" class="card_img">
                 <div class="sub__card">
                     <div class="card__sub-title">WOMEN FASHION</div>
                     <div class="card__title">MYA TOP - MAI TAI</div>
@@ -159,8 +200,8 @@
             </div>
 
             <div class="card">
-                <img src="" alt="woman in bikini" class="card_img">
-                <!-- <img src="img/trending/model3.webp" alt="" class="card_img"> -->
+                <!-- <img src="" alt="woman in bikini" class="card_img"> -->
+                <img src="img/products model/model3.jpg" alt="" class="card_img">
                 <div class="sub__card">
                     <div class="card__sub-title">WOMEN FASHION</div>
                     <div class="card__title">MAYA TOP - OXFORD</div>
@@ -178,8 +219,8 @@
             </div>
 
             <div class="card">
-                <img src="" alt="woman in bikini" class="card_img">
-                <!-- <img src="img/trending/model4.webp" alt="" class="card_img"> -->
+                <!-- <img src="" alt="woman in bikini" class="card_img"> -->
+                <img src="img/products model/model2.jpg" alt="" class="card_img">
                 <div class="sub__card">
                     <div class="card__sub-title">WOMEN FASHION</div>
                     <div class="card__title">MYA TOP - STONE</div>
@@ -198,8 +239,8 @@
             </div>
 
             <div class="card">
-                <img src="" alt="woman in bikini" class="card_img">
-                <!-- <img src="img/trending/model1.webp" alt="" class="card_img"> -->
+                <!-- <img src="" alt="woman in bikini" class="card_img"> -->
+                <img src="img/products model/model7.jpg" alt="" class="card_img">
                 <div class="sub__card">
                     <div class="card__sub-title">WOMEN FASHION</div>
                     <div class="card__title">MYA TOP - MOCHA</div>
@@ -244,27 +285,26 @@
                     </div>
                     <img src="img/collections/winter3.png" alt="" class="women-collection-img">
                 </div>
-
             </div>
         </section>
 
-          <section class="pruducts-container">
+        <section class="pruducts-container">
             <div class="our-products">Our products</div>
-            <ul class="products-navigation-bar">
-                <li class="active-link">Featured</li>
-                <li>Best Sellers</li>
-                <li>New Arrivals</li>
+            <ul class="products-navigation-bar filter">
+                <li class="active-link filter-btn" data-filter='featured'>Featured</li>
+                <li class="filter-btn" data-filter='bestseller'>Best Sellers</li>
+                <li class="filter-btn" data-filter='newarrival'>New Arrivals</li>
             </ul>
             <div class="grid-products-container">
 
-                <div class="producs-card sale">
-                    <img src="img/products model/model1.jpg" alt="" class="product-image">
-                    <div class="sub-card">
-                        <div class="sub-card-card">
-                            <div class="product-name">KENDALL TOP - DENIM</div>
-                            <div class="price-stars-container">
-                                <div class="price">100$ <s>540$</s></div>
-                                <div class="stars-container-two">
+                <div class="product-card sale" data-category='featured'>
+                    <img src="img/products model/model1.jpg" alt="KENDALL TOP - DENIM" class="product-image" >
+                    <div class="product-sub-container">
+                        <div class="product-description-container">
+                            <h2 class="product-name">KENDALL TOP - DENim</h2>
+                            <div class="product-price-stars-container">
+                                <span class="product-price">100$ <s>540$</s></span>
+                                <div class="product-stars-container">
                                     <i class="fa-solid fa-star stars"></i>
                                     <i class="fa-solid fa-star stars"></i>
                                     <i class="fa-solid fa-star stars"></i>
@@ -273,20 +313,20 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="cart-icon">
+                        <button type="button" title="cart-button" class="product-cart-icon-container">
                             <img src="svgs/bag.svg" alt="" class="cart">
-                        </div>
+                        </button>
                     </div>
                 </div>
 
-                <div class="producs-card sale">
-                    <img src="img/products model/model2.jpg" alt="" class="product-image">
-                    <div class="sub-card">
-                        <div class="sub-card-card">
-                            <div class="product-name">BABY TEE RIBBED - DENIM</div>
-                            <div class="price-stars-container">
-                                <div class="price">30$ <s>250$</s></div>
-                                <div class="stars-container-two">
+                <div class="product-card sale" data-category='featured'>
+                    <img src="img/products model/model2.jpg" alt="KENDALL TOP - DENIM" class="product-image">
+                    <div class="product-sub-container">
+                        <div class="product-description-container">
+                            <h2 class="product-name">KENDALL TOP - DENIM</h2>
+                            <div class="product-price-stars-container">
+                                <span class="product-price">100$ <s>540$</s></span>
+                                <div class="product-stars-container">
                                     <i class="fa-solid fa-star stars"></i>
                                     <i class="fa-solid fa-star stars"></i>
                                     <i class="fa-solid fa-star stars"></i>
@@ -295,20 +335,20 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="cart-icon">
+                        <button type="button" title="cart-button" class="product-cart-icon-container">
                             <img src="svgs/bag.svg" alt="" class="cart">
-                        </div>
+                        </button>
                     </div>
                 </div>
 
-                <div class="producs-card sale">
-                    <img src="img/products model/model3.jpg" alt="" class="product-image">
-                    <div class="sub-card">
-                        <div class="sub-card-card">
-                            <div class="product-name">BOYFRIEND TEE - DENIM</div>
-                            <div class="price-stars-container">
-                                <div class="price">90$ <s>150$</s></div>
-                                <div class="stars-container-two">
+                <div class="product-card sale" data-category='bestseller'>
+                    <img src="img/products model/model3.jpg" alt="KENDALL TOP - DENIM" class="product-image">
+                    <div class="product-sub-container">
+                        <div class="product-description-container">
+                            <h2 class="product-name">KENDALL TOP - DENIM</h2>
+                            <div class="product-price-stars-container">
+                                <span class="product-price">100$ <s>540$</s></span>
+                                <div class="product-stars-container">
                                     <i class="fa-solid fa-star stars"></i>
                                     <i class="fa-solid fa-star stars"></i>
                                     <i class="fa-solid fa-star stars"></i>
@@ -317,20 +357,20 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="cart-icon">
+                        <button type="button" title="cart-button" class="product-cart-icon-container">
                             <img src="svgs/bag.svg" alt="" class="cart">
-                        </div>
+                        </button>
                     </div>
                 </div>
 
-                <div class="producs-card">
-                    <img src="img/products model/model4.jpg" alt="" class="product-image">
-                    <div class="sub-card">
-                        <div class="sub-card-card">
-                            <div class="product-name">CLOUDLUX CHRIS CREWNECK - NAVY</div>
-                            <div class="price-stars-container">
-                                <div class="price">50$ <s>150$</s></div>
-                                <div class="stars-container-two">
+                <div class="product-card" data-category='bestseller'>
+                    <img src="img/products model/model4.jpg" alt="KENDALL TOP - DENIM" class="product-image">
+                    <div class="product-sub-container">
+                        <div class="product-description-container">
+                            <h2 class="product-name">KENDALL TOP - DENIM</h2>
+                            <div class="product-price-stars-container">
+                                <span class="product-price">100$ <s>540$</s></span>
+                                <div class="product-stars-container">
                                     <i class="fa-solid fa-star stars"></i>
                                     <i class="fa-solid fa-star stars"></i>
                                     <i class="fa-solid fa-star stars"></i>
@@ -339,41 +379,20 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="cart-icon">
+                        <button type="button" title="cart-button" class="product-cart-icon-container">
                             <img src="svgs/bag.svg" alt="" class="cart">
-                        </div>
-                    </div>
-                </div>
-                <div class="producs-card">
-                    <img src="img/products model/model5.jpg" alt="" class="product-image">
-                    <div class="sub-card">
-                        <div class="sub-card-card">
-                            <div class="product-name">CECE BOOTY SHORT - BLACK</div>
-                            <div class="price-stars-container">
-                                <div class="price">100$ <s>540$</s></div>
-                                <div class="stars-container-two">
-                                    <i class="fa-solid fa-star stars"></i>
-                                    <i class="fa-solid fa-star stars"></i>
-                                    <i class="fa-solid fa-star stars"></i>
-                                    <i class="fa-solid fa-star stars"></i>
-                                    <i class="fa-solid fa-star stars"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="cart-icon">
-                            <img src="svgs/bag.svg" alt="" class="cart">
-                        </div>
+                        </button>
                     </div>
                 </div>
 
-                <div class="producs-card">
-                    <img src="img/products model/model6.jpg" alt="" class="product-image">
-                    <div class="sub-card">
-                        <div class="sub-card-card">
-                            <div class="product-name">CLOUDLUX ARIANA HOODIE - PAPARAZZI</div>
-                            <div class="price-stars-container">
-                                <div class="price">30$ <s>250$</s></div>
-                                <div class="stars-container-two">
+                <div class="product-card" data-category='bestseller'>
+                    <img src="img/products model/model5.jpg" alt="KENDALL TOP - DENIM" class="product-image">
+                    <div class="product-sub-container">
+                        <div class="product-description-container">
+                            <h2 class="product-name">KENDALL TOP - DENIM</h2>
+                            <div class="product-price-stars-container">
+                                <span class="product-price">100$ <s>540$</s></span>
+                                <div class="product-stars-container">
                                     <i class="fa-solid fa-star stars"></i>
                                     <i class="fa-solid fa-star stars"></i>
                                     <i class="fa-solid fa-star stars"></i>
@@ -382,20 +401,20 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="cart-icon">
+                        <button type="button" title="cart-button" class="product-cart-icon-container">
                             <img src="svgs/bag.svg" alt="" class="cart">
-                        </div>
+                        </button>
                     </div>
                 </div>
 
-                <div class="producs-card">
-                    <img src="img/products model/model7.jpg" alt="" class="product-image">
-                    <div class="sub-card">
-                        <div class="sub-card-card">
-                            <div class="product-name">ALEX DRESS - GOSSIP</div>
-                            <div class="price-stars-container">
-                                <div class="price">90$ <s>150$</s></div>
-                                <div class="stars-container-two">
+                <div class="product-card" data-category='newarrival'>
+                    <img src="img/products model/model6.jpg" alt="KENDALL TOP - DENIM" class="product-image">
+                    <div class="product-sub-container">
+                        <div class="product-description-container">
+                            <h2 class="product-name">KENDALL TOP - DENIM</h2>
+                            <div class="product-price-stars-container">
+                                <span class="product-price">100$ <s>540$</s></span>
+                                <div class="product-stars-container">
                                     <i class="fa-solid fa-star stars"></i>
                                     <i class="fa-solid fa-star stars"></i>
                                     <i class="fa-solid fa-star stars"></i>
@@ -404,20 +423,20 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="cart-icon">
+                        <button type="button" title="cart-button" class="product-cart-icon-container">
                             <img src="svgs/bag.svg" alt="" class="cart">
-                        </div>
+                        </button>
                     </div>
                 </div>
 
-                <div class="producs-card">
-                    <img src="img/products model/model8.jpg" alt="" class="product-image">
-                    <div class="sub-card">
-                        <div class="sub-card-card">
-                            <div class="product-name">CLOUDLUX ROCKY SWEATPANTS - DUNE</div>
-                            <div class="price-stars-container">
-                                <div class="price">50$ <s>150$</s></div>
-                                <div class="stars-container-two">
+                <div class="product-card" data-category='newarrival'>
+                    <img src="img/products model/model7.jpg" alt="KENDALL TOP - DENIM" class="product-image">
+                    <div class="product-sub-container">
+                        <div class="product-description-container">
+                            <h2 class="product-name">KENDALL TOP - DENIM</h2>
+                            <div class="product-price-stars-container">
+                                <span class="product-price">100$ <s>540$</s></span>
+                                <div class="product-stars-container">
                                     <i class="fa-solid fa-star stars"></i>
                                     <i class="fa-solid fa-star stars"></i>
                                     <i class="fa-solid fa-star stars"></i>
@@ -426,12 +445,35 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="cart-icon">
+                        <button type="button" title="cart-button" class="product-cart-icon-container">
                             <img src="svgs/bag.svg" alt="" class="cart">
-                        </div>
+                        </button>
                     </div>
-                </div>             
+                </div>
+
+                <div class="product-card" data-category='newarrival'>
+                    <img src="img/products model/model8.jpg" alt="KENDALL TOP - DENIM" class="product-image">
+                    <div class="product-sub-container">
+                        <div class="product-description-container">
+                            <h2 class="product-name">KENDALL TOP - DENIM</h2>
+                            <div class="product-price-stars-container">
+                                <span class="product-price">100$ <s>540$</s></span>
+                                <div class="product-stars-container">
+                                    <i class="fa-solid fa-star stars"></i>
+                                    <i class="fa-solid fa-star stars"></i>
+                                    <i class="fa-solid fa-star stars"></i>
+                                    <i class="fa-solid fa-star stars"></i>
+                                    <i class="fa-solid fa-star stars"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" title="cart-button" class="product-cart-icon-container">
+                            <img src="svgs/bag.svg" alt="" class="cart">
+                        </button>
+                    </div>
+                </div>
             </div>
+
             <div class="dots-page">
                 <i class="fa-solid fa-circle active"></i>
                 <i class="fa-solid fa-circle"></i>
@@ -439,7 +481,7 @@
         </section>
 
         
-        <section class="testimonials-container">
+        <section class="testimonials-container full-width main-container">
             <div class="costumer-say">
                 <h3>What Our Custumer Says</h3>
                 <div class="costumer">
@@ -465,15 +507,14 @@
 
                 </div>
             </div>
+        </section>
 
-            <section class="companies">
-                    <img src="img/companies/company1.png" alt="">
-                    <img src="img/companies/company2.png" alt="">
-                    <img src="img/companies/company3.png" alt="">
-                    <img src="img/companies/company4.png" alt="">
-                    <img src="img/companies/company5.png" alt="">
-            </section>
-
+        <section class="companies">
+            <img src="img/companies/company1.png" alt="" class="company-images">
+            <img src="img/companies/company2.png" alt="" class="company-images">
+            <img src="img/companies/company3.png" alt="" class="company-images">
+            <img src="img/companies/company4.png" alt="" class="company-images">
+            <img src="img/companies/company5.png" alt="" class="company-images">
         </section>
 
 
@@ -524,8 +565,8 @@
 </main>
 
 
-<footer> 
-        <section class="email-us"> 
+<footer class="footer-container"> 
+        <section class="email-us full-width"> 
             <h1>Our Newsletter</h1>
             <p>Our discounts products are only available for limited amount</p>
             <div class="email-input-container">
@@ -561,58 +602,60 @@
         </section>
 
         <!-- ???????? -->
-        <section class="footer-links">
-            <div class="multiple-link">
-                <div class="footer-shop">
-                    <img src="svgs/store.svg" alt="" class="icon">
-                    <h5>Winter</h5>
-                </div>
-                <div class="footer-description">
-                    Your one-stop destination 
-                    for quality products, exceptional service, and 
-                    a seamless shopping experience.
-                </div>
-                <div class="footer-socials">
-                    <i class="fa-brands fa-facebook-f"></i>
-                    <i class="fa-brands fa-instagram"></i>
-                    <i class="fa-brands fa-twitter"></i>
-                    <i class="fa-brands fa-pinterest-p"></i>
-                </div>
-            </div>
-
-            <div class="footer-links-wrapper">
+        <section class="full-width footer-container footer-links-container">
+            <div class="footer-links">
                 <div class="multiple-link">
-                    <ul>
-                        <li>Help 
-                            <img src="svgs/left-right-angle/right-angle.svg" alt="">
-                        </li>
-                        <li>Privacy Policy</li>
-                        <li>Shipping & delivery</li>
-                        <li>Refund Policy</li>
-                        <li>Track You Order</li>
-                    </ul>
+                    <div class="footer-shop">
+                        <img src="svgs/store.svg" alt="" class="icon">
+                        <h5>Winter</h5>
+                    </div>
+                    <div class="footer-description">
+                        Your one-stop destination
+                        for quality products, exceptional service, and
+                        a seamless shopping experience.
+                    </div>
+                    <div class="footer-socials"> 
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-pinterest-p"></i>
+                    </div>
                 </div>
-                <div class="multiple-link">
-                    <ul>
-                        <li>Store
-                            <img src="svgs/left-right-angle/right-angle.svg" alt="">
-                        </li>
-                        <li>Winter Collections</li>
-                        <li>Women Fashions</li>
-                        <li>Products</li>
-                        <li>Other</li>
-                    </ul>
-                </div>
-                <div class="multiple-link">
-                    <ul>
-                        <li>Supports
-                            <img src="svgs/left-right-angle/right-angle.svg" alt="">
-                        </li>
-                        <li>Feedbacks</li>
-                        <li>Contact Us</li>
-                        <li>News</li>
-                        <li>Terms & Conditions</li>
-                    </ul>
+                
+                <div class="footer-links-wrapper">
+                    <div class="multiple-link">
+                        <ul>
+                            <li>Help
+                                <img src="svgs/left-right-angle/right-angle.svg" alt="">
+                            </li>
+                            <li>Privacy Policy</li>
+                            <li>Shipping & delivery</li>
+                            <li>Refund Policy</li>
+                            <li>Track You Order</li>
+                        </ul>
+                    </div>
+                    <div class="multiple-link">
+                        <ul>
+                            <li>Store
+                                <img src="svgs/left-right-angle/right-angle.svg" alt="">
+                            </li>
+                            <li>Winter Collections</li>
+                            <li>Women Fashions</li>
+                            <li>Products</li>
+                            <li>Other</li>
+                        </ul>
+                    </div>
+                    <div class="multiple-link">
+                        <ul>
+                            <li>Supports
+                                <img src="svgs/left-right-angle/right-angle.svg" alt="">
+                            </li>
+                            <li>Feedbacks</li>
+                            <li>Contact Us</li>
+                            <li>News</li>
+                            <li>Terms & Conditions</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
@@ -632,27 +675,3 @@
 </html>
 
 
-<!-- 
-<details class="cartContainer" closed>
-    <summary>
-        <img src="svgs/bag.svg" alt="" class="shop-basket">
-        <div class="cart-count">9+</div>
-    </summary>
-    <ul>
-        <li class="cart-items">
-            <details closed>
-                <summary>
-                    Ball
-                </summary>
-                <ul>
-                    <li>White</li>
-                    <li>Blue</li>
-                </ul>
-            </details>
-        </li>
-        <li class="cart-items">Pencil</li>
-        <li class="cart-items">Paper</li>
-        <li class="cart-items">Eraser</li>
-        <li class="cart-items">Pen</li>
-    </ul>
-</details> -->
